@@ -25,7 +25,6 @@ div.side-menu {
 	/*border: 2px solid hotpink;*/
 }
 div.rightside-menu {
-	background-color: lightpink;
 	float: right;
 	width: 25vw;
 	margin-left: 73%;
@@ -106,6 +105,13 @@ h1 {
 }
 
 h2.myName {
+	color: ghostwhite;
+	font-family: verdana;
+	text-align: center;
+	margin: 0;
+	font-size: 2vw;
+}
+h2.month {
 	color: ghostwhite;
 	font-family: verdana;
 	text-align: center;
