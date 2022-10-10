@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en-US"> <!-- lang means languages -->
+	<head>
+		<title> My Bio </title>
+		<link rel="icon" type="image/x-icon" href="Pictures/sakuraicon.ico">
+		<link rel="stylesheet" href="styles.css"> <!-- External CSS: styles.css to be created -->
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+	</head>
+<!-- Created by Gie Myla Dela Cruz -->
+	<body>
+			<div class="side-menu" id="div-sidemenu">
+			<h1>My Bio</h1>
+					<a href="Pictures/myProfile.jpg">
+					<img src="Pictures/myProfile.jpg" class="profile" alt="My Profile"></a>
+				
+				<h2 class="myName">Gie Myla Dela Cruz</h2>
+				<h3>Document Analyst</h3>
+				<p id="contact">Manila, Philippines<br></p>
+
+				<button class="btnsidemenu" type="btnFacebook"><a href="https://www.facebook.com/jiemailah" target="_blank">Facebook</a></button>
+				<button class="btnsidemenu" type="btnInstagram"><a href="https://www.instagram.com" target="_blank">Instagram</a></button>
+				<button class="btnsidemenu" type="btnTikTok"><a href="https://www.tiktok.com/@mailah14317" target="_blank">TikTok</a></button>
+				<button class="btnsidemenu" type="btnTwitter"><a href="https://www.twitter.com" target="_blank">Twitter</a></button>
+				<button class="btnsidemenu" type="btnShopeeLinks"><a href="https://www.shopee.ph" target="_blank">Shopee Links</a></button>
+				<button class="btnsidemenu" type="btnLazadaLinks"><a href="https://www.lazada.com.ph" target="_blank">Lazada Links</a></button>
+			</br>
+		</div>
+		<div class="main-menu" id="div-mainmenu">
+			<!-- 1st row "About Me" -->
+			<div class="row">
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+				<table class="column">
+					<p class="title">About Me</p>
+				</table>
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+			</div>
+			<div class="row">
+				<p class="description">
+							A curious, highly adaptable to change, and highly motivated 
+						individual, with a proven track record in the field of Information 
+						Technology.
+				</p>
+			</div>
+			<!-- 2nd row "Education" -->
+			<div class="row">
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+				<table class="column">
+					<p class="title">Education</p>
+				</table>
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+			</div>
+			<div class="row">
+				<pre>
+<b>2015-2019</b>
+Polytechnic University of the Philippines
+<b>Bachelor of Science in Information Technology</b>
+				</pre>
+			</div>
+			<!--3rd row "Experience" -->
+			<div class="row">
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+				<table class="column">
+					<p class="title">Experience</p>
+				</table>
+				<table class="column">
+					<img class="sakuradesign" src="Pictures/sakuraicon.ico">
+				</table>
+			</div>
+			<div class="row">
+				<pre>
+<b>Petsure Services Inc. 2020-2022
+Claim Administrator/Data Assistant</b>
+				</pre>
+			</div> <!-- row -->
+			<div class="row">
+				<p class="description">
+						In charge of organizing client compensation files in order
+					to conduct the initial inquiries on work-related injuries for
+					a claim can be made.
+				</p>
+			</div> <!-- row -->
+			<div class="row">
+				<pre>
+<b>PUP Main Branch 2022-present
+Document Analyst</b></pre>
+			</div> <!-- row -->
+			<div class="row">
+				<p class="description">
+						In charge of organizing, filing, and preserving important
+					documents like minutes of the meeting and user manuals.
+				</p>
+			</div> <!-- row -->
+			</div>
+		</div>
+		<div class="rightside-menu" id="div-rightsidemenu">
+			<div>
+				<h3 class="month">Christmas Countdown</h3>
+				<p class="countdown" id="demo"></p>
+				<script>
+					//Set the date we're counting down to
+					var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime()
+					//Update the count down every 1 second
+					var x = setInterval (function() {
+						//Get today's date and time
+						var now = new Date().getTime();
+						//Find the distance between now and the count down date
+						var distance = countDownDate - now;
+
+						// Time calculations for days, hours, minutes and seconds
+						var days = Math.floor(distance / (1000 * 60 * 60 * 24));
+						var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
+						var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
+						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
+						    
+						// Output the result in an element with id="demo"
+						document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+						    
+						// If the count down is over, write some text 
+						if (distance < 0) {
+							clearInterval(x);
+						    document.getElementById("demo").innerHTML = "Merry Christmas Everyone!";
+						}
+					}, 1000);
+				</script>
+			</div>
+			<h2 class="month">October 2022</h2>
+			<table class="tblcalendar">
+				<tr>
+					<th class="tbldaycell">Sun</th>
+					<th class="tbldaycell">Mon</th>
+					<th class="tbldaycell">Tues</th>
+					<th class="tbldaycell">Wed</th>
+					<th class="tbldaycell">Thur</th>
+					<th class="tbldaycell">Fri</th>
+					<th class="tbldaycell">Sat</th>
+				</tr>
+				<tr>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell">1</td>
+				</tr>
+				<tr>
+					<td class="daycell">2</td>
+					<td class="daycell">3</td>
+					<td class="daycell">4</td>
+					<td class="daycell">5</td>
+					<td class="daycell">6</td>
+					<td class="daycell">7</td>
+					<td class="daycell">8</td>
+				</tr>
+				<tr>
+					<td class="daycell">9</td>
+					<td class="daycell">10</td>
+					<td class="daycell">11</td>
+					<td class="daycell">12</td>
+					<td class="daycell">13</td>
+					<td class="daycell">14</td>
+					<td class="daycell">15</td>
+				</tr>
+				<tr>
+					<td class="daycell">16</td>
+					<td class="daycell">17</td>
+					<td class="daycell">18</td>
+					<td class="daycell">19</td>
+					<td class="daycell">20</td>
+					<td class="daycell">21</td>
+					<td class="daycell">22</td>
+				</tr>
+				<tr>
+					<td class="daycell">23</td>
+					<td class="daycell">24</td>
+					<td class="daycell">25</td>
+					<td class="daycell">26</td>
+					<td class="daycell">27</td>
+					<td class="daycell">28</td>
+					<td class="daycell">29</td>
+				</tr>
+				<tr>
+					<td class="daycell">30</td>
+					<td class="daycell">31</td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+					<td class="daycell"></td>
+				</tr>
+			</table>
+		</div> <!--Division for rightside-menu -->
+	</body>
+	<footer>
+		
+	</footer>
+</html>
