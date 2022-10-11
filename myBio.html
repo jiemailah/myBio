@@ -104,9 +104,16 @@ Document Analyst</b></pre>
 			</div>
 		</div>
 		<div class="rightside-menu" id="div-rightsidemenu">
-			<div>
+			<div class="calendar" id="calendar">
+				<p class="month" id="month"></p>
+				<script>
+					var now = new Date();
+					document.getElementById("month").innerHTML = now;
+				</script>
+			</div> <!--Division for Calendar-->
+			<div class="countdown">
 				<h3 class="month">Christmas Countdown</h3>
-				<p class="countdown" id="demo"></p>
+				<p class="timer" id="timer"></p>
 				<script>
 					//Set the date we're counting down to
 					var countDownDate = new Date("Dec 25, 2022 00:00:00").getTime()
@@ -124,82 +131,17 @@ Document Analyst</b></pre>
 						var seconds = Math.floor((distance % (1000 * 60)) / 1000);
 						    
 						// Output the result in an element with id="demo"
-						document.getElementById("demo").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
+						document.getElementById("timer").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
 						    
 						// If the count down is over, write some text 
 						if (distance < 0) {
 							clearInterval(x);
-						    document.getElementById("demo").innerHTML = "Merry Christmas Everyone!";
+						    document.getElementById("timer").innerHTML = "Merry Christmas Everyone!";
 						}
 					}, 1000);
 				</script>
-			</div>
-			<h2 class="month">October 2022</h2>
-			<table class="tblcalendar">
-				<tr>
-					<th class="tbldaycell">Sun</th>
-					<th class="tbldaycell">Mon</th>
-					<th class="tbldaycell">Tues</th>
-					<th class="tbldaycell">Wed</th>
-					<th class="tbldaycell">Thur</th>
-					<th class="tbldaycell">Fri</th>
-					<th class="tbldaycell">Sat</th>
-				</tr>
-				<tr>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell">1</td>
-				</tr>
-				<tr>
-					<td class="daycell">2</td>
-					<td class="daycell">3</td>
-					<td class="daycell">4</td>
-					<td class="daycell">5</td>
-					<td class="daycell">6</td>
-					<td class="daycell">7</td>
-					<td class="daycell">8</td>
-				</tr>
-				<tr>
-					<td class="daycell">9</td>
-					<td class="daycell">10</td>
-					<td class="daycell">11</td>
-					<td class="daycell">12</td>
-					<td class="daycell">13</td>
-					<td class="daycell">14</td>
-					<td class="daycell">15</td>
-				</tr>
-				<tr>
-					<td class="daycell">16</td>
-					<td class="daycell">17</td>
-					<td class="daycell">18</td>
-					<td class="daycell">19</td>
-					<td class="daycell">20</td>
-					<td class="daycell">21</td>
-					<td class="daycell">22</td>
-				</tr>
-				<tr>
-					<td class="daycell">23</td>
-					<td class="daycell">24</td>
-					<td class="daycell">25</td>
-					<td class="daycell">26</td>
-					<td class="daycell">27</td>
-					<td class="daycell">28</td>
-					<td class="daycell">29</td>
-				</tr>
-				<tr>
-					<td class="daycell">30</td>
-					<td class="daycell">31</td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-					<td class="daycell"></td>
-				</tr>
-			</table>
+			</div> <!--Division for Countdown-->
+			
 		</div> <!--Division for rightside-menu -->
 	</body>
 	<footer>

@@ -60,6 +60,7 @@ table.column {
 }
 table.tblcalendar {
 	border: 2px solid hotpink;
+	display
 }
 td.daycell {
 	text-align: center;
@@ -67,7 +68,7 @@ td.daycell {
 	margin: 5vw;
 	/*border: 2px solid hotpink;*/
 }
-p.countdown {
+p.timer {
 	text-align: center;
 	font-size: 2.5vw;
 	margin-top: 0;
@@ -146,4 +147,11 @@ a {
 }
 #side-menu{
 	position: absolute;
+}
+/*Phone HTML*/
+div.frame {
+	float: left;
+	margin-left: 35vw;
+	background-size: auto;
+	width: 10%;
 }
