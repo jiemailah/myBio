@@ -5,6 +5,7 @@ body {
 	height: 100vh;
 	margin: 0;
 }
+
 img.background {
 	background-size: cover;
 	background-position: back;
@@ -99,8 +100,11 @@ p.title {
 	font-weight: bold;
 	font-family: brush script mt;
 }
+p.month {
+	font-size: 2vw;
+}
 h1 {
-	font-size: 3vw;
+	font-size: 2vw;
 	text-align: center;
 	margin: 0;
 }
