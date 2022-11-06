@@ -1,10 +1,21 @@
 <!DOCTYPE html>
 <html lang="en-US"> <!-- lang means languages -->
 	<head>
+		<script async src="https://api.countapi.xyz/hit/myBio.html/56ce2f5b-45e5-470f-8d13-34084938dd33?callback=websiteVisits"></script>
+		<script>
+			function websiteVisits (response) {
+				document.querySelector("#visits").textContent = response.value;
+			}
+			function callbackName (response) {
+				document.getElementById('visits').innerText = response.value;
+			}
+		</script>
 		<title> My Bio </title>
 		<link rel="icon" type="image/x-icon" href="Pictures/sakuraicon.ico">
 		<link rel="stylesheet" href="styles.css"> <!-- External CSS: styles.css to be created -->
+		<script type="text/javascript" href="Javascript.html"></script>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" charset="utf-8">
+
 	</head>
 <!-- Created by Gie Myla Dela Cruz -->
 	<body>
@@ -19,10 +30,9 @@
 				<h3>Manila, Philippines</h3>
 				<p id="contact">Follow my day to day at:</p>
 				<button class="btnsidemenu" type="btnFacebook"><a href="https://www.facebook.com/jiemailah" target="_blank">Facebook</a></button>
-				<button class="btnsidemenu" type="btnInstagram"><a href="https://www.instagram.com" target="_blank">Instagram</a></button>
+				<button class="btnsidemenu" type="btnInstagram"><a href="https://www.instagram.com/jiemailah17" target="_blank">Instagram</a></button>
 				<button class="btnsidemenu" type="btnTikTok"><a href="https://www.tiktok.com/@mailah14317" target="_blank">TikTok</a></button>
 				<button class="btnsidemenu" type="btnTwitter"><a href="https://www.twitter.com" target="_blank">Twitter</a></button>
-				<button class="btnsidemenu" type="btnShopeeLinks"><a href="https://www.shopee.ph" target="_blank">Shopee</a></button>
 				<button class="btnsidemenu" type="btnLazadaLinks"><a href="https://www.lazada.com.ph" target="_blank">Lazada</a></button>
 			</br>
 		</div>
@@ -104,12 +114,23 @@ Document Analyst</b></pre>
 			</div>
 		</div>
 		<div class="rightside-menu" id="div-rightsidemenu">
+			<div>
+				<h1>This site has been visited <span id="visits"></span> times.</h1>
+			</div>
 			<div class="calendar" id="calendar">
-				<p class="month" id="month"></p>
+				<p class="date" id="date"></p>
 				<script>
-					var now = new Date();
-					document.getElementById("month").innerHTML = now;
+					var datemonth = new Date().toDateString();
+					console.log(datemonth);
+					document.getElementById("date").textContent = datemonth;
 				</script>
+				<p id="time">
+					<script type="text/javascript">
+						var datetime = new Date().toLocaleTimeString();
+						console.log(datetime);
+						document.getElementById("time").textContent = datetime;
+					</script>
+				</p>
 			</div> <!--Division for Calendar-->
 			<div class="countdown">
 				<h3 class="month">Christmas Countdown</h3>
